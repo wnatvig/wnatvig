@@ -27,10 +27,13 @@ void Person::setAge(int a){
 double Person::getDecades(){
 	return age/10;
 	}
-
 int Person::fib(){
-    if (age <= 1) return age;
-    return fib(age - 1) + fib(age - 2);
+	return fib_rec(age)
+    }
+
+int Person::fib_rec(int n){
+    if (n <= 1) {return n;}
+    return fib_rec(n - 1) + fib_rec(n - 2);
     }
 
 extern "C"{
