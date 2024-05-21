@@ -28,9 +28,9 @@ double Person::getDecades(){
 	return age/10;
 	}
 
-int Person::fib(int a){
-    if (a <= 1) return a;
-    return fib(a - 1) + fib(a - 2);
+int Person::fib(){
+    if (age <= 1) return age;
+    return fib(age - 1) + fib(age - 2);
     }
 
 extern "C"{
