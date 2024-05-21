@@ -8,6 +8,7 @@ class Person{
 		void setAge(int);
 		double getDecades();
 		int fib();
+		int fib_rec()
 	private:
 		int age;
 	};
@@ -28,7 +29,7 @@ double Person::getDecades(){
 	return age/10;
 	}
 int Person::fib(){
-	return fib_rec(age)
+	return fib_rec(age);
     }
 
 int Person::fib_rec(int n){
