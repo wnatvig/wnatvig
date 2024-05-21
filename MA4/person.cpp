@@ -8,7 +8,7 @@ class Person{
 		void setAge(int);
 		double getDecades();
 		int fib();
-		int fib_rec();
+		int fib_rec(int);
 	private:
 		int age;
 	};
